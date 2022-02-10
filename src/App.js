@@ -1,10 +1,10 @@
 import './App.css';
-import Button from './Button';
+import Todo from './Todo.js';
 
 function App() {
   return (
     <div className="App">
-      <Button className="btn">Button</Button>
+      <Todo />
     </div>
   );
 }
