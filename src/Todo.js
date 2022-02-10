@@ -78,7 +78,7 @@ const App = () => {
         <button type="submit">{editTodos.id ? 'Save' : 'Create'}</button>
         {editTodos.id && <button type="button" onClick={cancelEditHandler}>Cancel</button>}
       </form>
-      {todos.length == 0 ? (
+      {todos.length === 0 ? (
         <h3>No Todos</h3>
       ) : (
         <ul>
