@@ -10,14 +10,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import About from './routes/About';
 import Home from './routes/Home';
+import AboutTeam from './routes/AboutTeam';
 
 render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="about" element={<About />} >
+          <Route path="team" element={<AboutTeam />} />
+        </Route>
+        <Route path="home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
