@@ -11,6 +11,8 @@ import reportWebVitals from './reportWebVitals';
 import About from './routes/About';
 import Home from './routes/Home';
 import AboutTeam from './routes/AboutTeam';
+import Articles from './routes/Articles';
+import Article from './routes/Article';
 
 render(
   <React.StrictMode>
@@ -21,6 +23,8 @@ render(
           <Route path="team" element={<AboutTeam />} />
         </Route>
         <Route path="home" element={<Home />} />
+        <Route path="articles" element={<Articles />} />
+        <Route path="articles/:articleId" element={<Article />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
