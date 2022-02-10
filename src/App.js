@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import './App.css';
-import Todo from './Todo.js';
 
 function App() {
   return (
     <div className="App">
-      <Todo />
+      <Link to="/about" className="btn">About</Link>
+      <Link to="/home" className="btn">Home</Link>
     </div>
   );
 }
