@@ -13,6 +13,7 @@ import Home from './routes/Home';
 import AboutTeam from './routes/AboutTeam';
 import Articles from './routes/Articles';
 import Article from './routes/Article';
+import Page404 from './Page404';
 
 render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ render(
         <Route path="home" element={<Home />} />
         <Route path="articles" element={<Articles />} />
         <Route path="articles/:articleId" element={<Article />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

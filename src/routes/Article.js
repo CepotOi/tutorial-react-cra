@@ -6,8 +6,8 @@ export default function Article() {
   const article = getArticle(params.articleId);
   return (
     <div className="App">
-      <h1>{article.title}</h1>
-      <p>{article.content}</p>
+      <h1>{article ? article.title : 404}</h1>
+      <p>{article ? article.content : 'Not Found'}</p>
 
       <Link to="/articles" className="btn">Articles</Link>
     </div>

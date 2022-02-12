@@ -21,6 +21,5 @@ export function getArticlesArr() {
 }
 
 export function getArticle(articleId) {
-  const article = Articles.find((article) => article.id === parseInt(articleId));
-  return article;
+  return Articles.find((article) => article.id === parseInt(articleId));
 }
