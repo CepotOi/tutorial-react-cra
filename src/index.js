@@ -14,6 +14,8 @@ import AboutTeam from './routes/AboutTeam';
 import Articles from './routes/Articles';
 import Article from './routes/Article';
 import Page404 from './Page404';
+import Login from './Login';
+import Dashboard from './Dashboard';
 
 render(
   <React.StrictMode>
@@ -26,6 +28,8 @@ render(
         <Route path="home" element={<Home />} />
         <Route path="articles" element={<Articles />} />
         <Route path="articles/:articleId" element={<Article />} />
+        <Route path="login" element={<Login />} />
+        <Route path="dashboard" element={<Dashboard />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
